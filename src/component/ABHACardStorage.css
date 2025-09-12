@@ -1,0 +1,735 @@
+.abha-card-storage-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f4ff 0%, #e8e0ff 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: relative;
+}
+
+/* Status Bar */
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Language Section - Styles consolidated in ABHACard.css */
+
+/* User Profile Section - Styles consolidated in ABHACard.css */
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dropdown-icon {
+  width: 16px;
+  height: 16px;
+  color: #666;
+}
+
+/* Navigation Tabs - Styles consolidated in ABHACard.css */
+
+/* ABHA Card Container */
+.abha-card-container {
+  padding: 20px 16px;
+}
+
+.abha-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Card Header */
+.card-header {
+  background: #1e3a8a;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.national-emblem {
+  position: relative;
+}
+
+.emblem-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.emblem-center {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: white;
+}
+
+.emblem-lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.emblem-lines .line {
+  position: absolute;
+  background: white;
+  border-radius: 1px;
+}
+
+.line-1 {
+  width: 2px;
+  height: 6px;
+  top: -3px;
+  left: -1px;
+}
+
+.line-2 {
+  width: 6px;
+  height: 2px;
+  top: -1px;
+  left: -3px;
+}
+
+.line-3 {
+  width: 2px;
+  height: 6px;
+  top: 3px;
+  left: -1px;
+}
+
+.nha-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.nha-emblem {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nha-center {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #1e3a8a;
+}
+
+.nha-lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nha-lines .nha-line {
+  position: absolute;
+  background: #1e3a8a;
+  border-radius: 1px;
+}
+
+.nha-line-1 {
+  width: 1px;
+  height: 3px;
+  top: -1.5px;
+  left: -0.5px;
+}
+
+.nha-line-2 {
+  width: 3px;
+  height: 1px;
+  top: -0.5px;
+  left: -1.5px;
+}
+
+.nha-line-3 {
+  width: 1px;
+  height: 3px;
+  top: 1.5px;
+  left: -0.5px;
+}
+
+.nha-text {
+  font-size: 7px;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1;
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.user-details {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.user-full-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.user-demographics {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 12px 0;
+  font-weight: 400;
+}
+
+.abha-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.warning-icon {
+  color: #ef4444;
+  font-size: 14px;
+}
+
+.warning-text {
+  color: #ef4444;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.abha-number {
+  margin-bottom: 8px;
+}
+
+.abha-label {
+  font-size: 12px;
+  color: #666;
+  margin-right: 4px;
+}
+
+.abha-value {
+  font-size: 12px;
+  color: #333;
+  font-weight: 500;
+}
+
+.abha-address {
+  font-size: 12px;
+  color: #333;
+  margin-top: 4px;
+}
+
+.address-label {
+  color: #666;
+  margin-right: 4px;
+}
+
+.address-value {
+  font-weight: 500;
+}
+
+/* QR Section */
+.qr-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.qr-code {
+  width: 70px;
+  height: 70px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.download-card-btn {
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 12px;
+  font-size: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: background 0.2s;
+}
+
+.download-card-btn:hover {
+  background: #7c3aed;
+}
+
+.download-icon {
+  width: 12px;
+  height: 12px;
+}
+
+/* Google Wallet Button */
+/* KYC Completed Button - GREEN background */
+.kyc-completed-btn {
+  width: 100%;
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.kyc-completed-btn:hover {
+  background: #059669;
+}
+
+/* Add to Google Wallet Button - BLACK background */
+.google-wallet-btn {
+  width: 100%;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.2s;
+}
+
+.google-wallet-btn:hover {
+  background: #333;
+}
+
+.wallet-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* More specific selectors for KYC Completed button (GREEN) */
+.abha-card .card-body .kyc-completed-btn {
+  background: #10b981 !important;
+}
+
+.abha-card .card-body .kyc-completed-btn:hover {
+  background: #059669 !important;
+}
+
+.abha-card-storage-page .abha-card-container .abha-card .card-body .kyc-completed-btn {
+  background: #10b981 !important;
+  color: white !important;
+}
+
+.abha-card-storage-page .abha-card-container .abha-card .card-body .kyc-completed-btn:hover {
+  background: #059669 !important;
+}
+
+/* Invite Friends Section */
+.invite-friends-section {
+  margin: 20px 16px;
+  background: #1e3a8a;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.invite-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.invite-icon {
+  flex-shrink: 0;
+}
+
+.people-icon {
+  position: relative;
+  width: 40px;
+  height: 30px;
+}
+
+.person {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+}
+
+.person-1 {
+  top: 0;
+  left: 0;
+}
+
+.person-2 {
+  top: 0;
+  right: 0;
+}
+
+.person-3 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.invite-text {
+  flex: 1;
+}
+
+.invite-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+}
+
+.invite-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.you-both {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.invite-arrow-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.invite-arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px 16px;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.nav-item:hover {
+  background: rgba(139, 92, 246, 0.1);
+}
+
+.nav-item.active {
+  color: #8b5cf6;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+  color: #666;
+}
+
+.nav-item.active .nav-icon {
+  color: #8b5cf6;
+}
+
+.nav-label {
+  font-size: 10px;
+  font-weight: 500;
+  color: #666;
+}
+
+.nav-item.active .nav-label {
+  color: #8b5cf6;
+}
+
+.notification-dot {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 8px;
+  height: 8px;
+  background: #ef4444;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* Action Buttons Section */
+.action-buttons-section {
+  display: flex;
+  gap: 12px;
+  padding: 0 16px 20px 16px;
+}
+
+.action-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.create-new-btn {
+  background: #8b5cf6;
+  color: white;
+}
+
+.create-new-btn:hover {
+  background: #7c3aed;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.action-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Delete Confirmation Modal */
+.delete-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.delete-modal {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 320px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.delete-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.delete-icon {
+  width: 24px;
+  height: 24px;
+  color: #ef4444;
+}
+
+.delete-modal-header h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.delete-modal-body {
+  margin-bottom: 24px;
+}
+
+.delete-modal-body p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.delete-modal-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.modal-btn {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancel-btn {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+.confirm-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background: #dc2626;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .abha-card-container {
+    padding: 16px 12px;
+  }
+  
+  .card-content {
+    flex-direction: row;
+    gap: 12px;
+  }
+  
+  .user-details {
+    margin-right: 12px;
+  }
+  
+  .qr-code {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .invite-friends-section {
+    margin: 16px 12px;
+  }
+  
+  .action-buttons-section {
+    padding: 0 12px 16px 12px;
+  }
+  
+  .delete-modal {
+    margin: 20px;
+    padding: 20px;
+  }
+}
