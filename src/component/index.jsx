@@ -21,6 +21,7 @@ import ABHACardComplete from './ABHACardComplete';
 import PatientRegistrationPage from './PatientRegistrationPage';
 import UjurProfilePage from './UjurProfilePage';
 import CreateABHAPage from './CreateABHAPage';
+import RecordsPage from './RecordsPage';
 import { hasABHACard, getLatestABHACard } from '../utils/abhaStorage';
 import './style.css';
 import BottomNavigation from './BottomNavigation';
@@ -155,6 +156,20 @@ const HealthcareApp = () => {
 
   if (currentPage === 'abha-complete') {
     return <ABHACardComplete onNavigate={handleNavigation} userData={completedABHAData} />;
+  }
+
+  if (currentPage === 'records') {
+    // Create mock user data for records page
+    const mockUserData = {
+      firstName: 'Manoj',
+      lastName: 'Agarwal',
+      gender: 'Male',
+      age: 32,
+      abhaAddress: 'mishrahs260526@abdm',
+      abhaNumber: '70746324465247',
+      qrCodeUrl: '/qrcode.jpg'
+    };
+    return <RecordsPage onNavigate={handleNavigation} userData={mockUserData} />;
   }
 
   return (
